@@ -1,0 +1,255 @@
+body {
+    font-family: 'Baskervville SC', serif;
+    background-color: #f8f9fa;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #000000;
+    color: rgb(0, 0, 0);
+    padding: 10px 10px;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar-nav .nav-link {
+    color: rgb(0, 0, 0);
+    margin: 0 0;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #000000;
+    transform: scale(1.1);
+}
+
+.profile {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #000000;
+    color: white;
+    margin-top: 0px; /* Adjust margin-top to accommodate the fixed header */
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease;
+}
+
+.profile h1 {
+    margin: 20px 0 10px;
+    font-size: 36px;
+}
+
+.profile p {
+    font-size: 18px;
+    margin: 0 0 20px;
+}
+
+.profile .btn {
+    background-color: #007bff;
+    color: rgb(3, 3, 3);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.content {
+    padding: 20px 20px;
+}
+
+.content h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 1%;
+    font-family: 'Playfair Display', serif;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    margin: 5px 0;
+}
+
+.project ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.about, .hobbies {
+    margin-bottom: 20px;
+}
+
+.about h3, .hobbies h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.education .card {
+    background-color: rgb(232, 223, 223);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.education .card h4 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.education .card p {
+    margin: 0;
+}
+
+.footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-links {
+    margin: 20px 0;
+}
+
+.contact-links .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+.footer .btn {
+    margin: 0% 3%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .profile img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile {
+        padding: 30px 10px;
+    }
+
+    .content {
+        padding: 30px 10px;
+    }
+
+    .project h3 {
+        font-size: 20px;
+    }
+
+    .about, .hobbies {
+        width: 100%;
+        margin: 0;
+    }
+
+    .contact-links .btn {
+        margin: 0 5px;
+        font-size: 14px;
+    }
+}
+
+
+.container {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+  
+.btn-primary {
+    display: flex;
+    place-items: center;
+    border-radius: 0.75em;
+    padding: 2% 2%;
+    width: 40%;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+    box-shadow: inset 0 0 0 1px black, 0 0 0 2px #3a3d40,
+      0 0 0 4px rgba(0, 0, 0, 0.25), 0 11px 27px -5px rgba(0, 0, 0, 0.53),
+      0 25px 25px -4px rgba(0, 0, 0, 0.35);
+  
+    background-image: radial-gradient(
+        227.71% 180.23% at 90.64% 130.38%,
+        rgb(17, 20, 23) 0%,
+        rgb(55, 59, 63) 100%
+      ),
+      radial-gradient(
+        207.84% 121.69% at -5.69% 111.39%,
+        rgb(17, 20, 23) 0%,
+        rgb(55, 59, 63) 100%
+      ),
+      linear-gradient(
+        206deg,
+        rgba(123, 134, 151, 0.2) 0%,
+        rgba(25, 27, 30, 0.2) 100%
+      ),
+      linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+  
+    span {
+      font-size: 1.5rem;
+      background-image: linear-gradient(69deg, #d1d1d1 0%, #828282 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 400;
+      text-shadow: 0 2px 1px rgba(0, 0, 0, 0.125);
+      transition: all 0.25s ease-in-out;
+    }
+  
+    &:active {
+      transform: translateY(2px);
+      box-shadow: inset 0 0 0 1px black, 0 0 0 2px #3a3d40,
+        0 0 0 4px rgba(0, 0, 0, 0.25), 0 4px 12px -5px rgba(0, 0, 0, 0.53),
+        0 6px 6px -4px rgba(0, 0, 0, 0.35);
+      transition: all 0.25s ease-in-out;
+      span {
+        background-image: linear-gradient(69deg, #dbd56e 0%, #edeab5 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 400;
+        text-shadow: 0 2px 1px rgba(0, 0, 0, 0.125);
+      }
+    }
+  }
+  
